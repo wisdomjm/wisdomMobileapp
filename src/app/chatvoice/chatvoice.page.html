@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>chatvoice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-item lines="none" *ngIf="active">
+    <ion-label class="welcome_text">
+      <h1>IA Wisdowm</h1>
+    </ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-item lines="none" *ngFor="let data of mChat">
+      <div class="{{data.class}}">
+        <h1>{{data.type}}</h1>
+        <p>{{data.message}}</p>
+        <p *ngIf="data.talk" style="color:#3f37c9;">
+          <i class="fa-solid fa-volume-high"  (click)="Talk(data.message)"></i>
+          <i class="fa-solid fa-circle-stop" style="color:#212529; margin-left: 20px;" (click)="stop()"></i> 
+        </p>
+      </div>  
+    </ion-item>
+    <br>
+    <ion-spinner name="circles" color="blueaccent" *ngIf="loading"></ion-spinner>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <!--div class="input-container box_shadow"></div-->
+      <ion-item lines="none">   
+        <ion-textarea color="blueaccent" placeholder="...Write your Message" [autoGrow]="true" [(ngModel)]="inputText"></ion-textarea>
+        
+      </ion-item>
+      <i class='bx bx-send btn-send' slot="end" (click)="AskQuestion()"></i>
+  </ion-toolbar>
+</ion-footer>

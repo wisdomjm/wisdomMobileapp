@@ -1,0 +1,70 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="jmvioleta">
+    <ion-label>
+      <h1 class="texto-mediano" style="margin-left: 12px;">Perfil</h1>
+    </ion-label>
+    <ion-avatar slot="end">
+      <img src="../../assets/icon/wisdomlogo.jpg" alt=""
+        style="width: 42px; height: 42px; margin-top: 10px; margin-right: 12px;">
+    </ion-avatar>
+    <!--ion-button color="light" slot="end">
+      <i class='bx bx-log-out .texto-mediano'></i>
+    </ion-button-->
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="image-container">
+    <img src="../../assets/images/child-2835430_640.jpg" alt="">
+    <div class="btn-profile">
+      <i class='bx bx-images i-color'></i>
+    </div>
+  </div>
+
+  <ion-list>
+    <!--[(ngModel)]="authData.password"-->
+    <ion-item lines="none">
+      <ion-label>Informacion Personal</ion-label>
+    </ion-item>
+
+
+    <ion-input color="jmvioleta" label="Nombre" label-placement="floating" fill="outline" type="text"
+      placeholder="Nombre">
+      <i class='bx bx-user-circle texto-mediano' slot="start"></i>
+    </ion-input>
+    
+    <br>
+    <ion-input color="jmvioleta" label="Apellidos" label-placement="floating" fill="outline" type="text"
+      placeholder="Apellidos">
+      <i class='bx bxs-user-circle texto-mediano' slot="start"></i>
+    </ion-input>
+
+
+    <ion-item lines="none">
+      <ion-label>Informacion de Contacto</ion-label>
+    </ion-item>
+
+
+    <ion-input color="jmvioleta" label="Email" label-placement="floating" fill="outline" type="text"
+      placeholder="user@email.com">
+      <i class='bx bx-mail-send texto-mediano' slot="start"></i>
+    </ion-input>
+
+    <br>
+    <ion-input color="jmvioleta" label="Direccion" label-placement="floating" fill="outline" type="text"
+      placeholder="Tu direccion">
+      <i class='bx bx-map-alt texto-mediano' slot="start"></i>
+    </ion-input>
+
+    <br>
+    <ion-input color="jmvioleta" label="Telefono" label-placement="floating" fill="outline" type="text"
+      placeholder="Tu telefono">
+      <i class='bx bx-phone texto-mediano' slot="start"></i>
+    </ion-input>
+
+
+  </ion-list>
+
+</ion-content>

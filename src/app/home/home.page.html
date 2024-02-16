@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="separador"></div>
+  <div class="main-logo">
+    <img src="../../assets/icon/wisdomlogo.jpg" alt="">
   </div>
+  <h1 class="ion-text-center texto-grande">
+    Wisdom JM
+  </h1>
+
+  <div class="separador"></div>
+
+  <h3 class="ion-text-center texto-mediano">
+    La Aplicacion que te ayuda a aprender en linea.
+  </h3>
+
+  <div class="separador"></div>
+  <ion-button expand="block" color="jmvioleta" [routerLink]="['/login']">Continuar</ion-button>
 </ion-content>

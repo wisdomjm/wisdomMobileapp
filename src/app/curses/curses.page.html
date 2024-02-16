@@ -1,0 +1,28 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="jmvioleta">
+    <ion-label>
+      <h1 class="texto-mediano" style="margin-left: 12px;">Mis Cursos</h1>
+    </ion-label>
+    <ion-avatar slot="end">
+      <img src="../../assets/icon/wisdomlogo.jpg" alt="" style="width: 42px; height: 42px; margin-top: 10px; margin-right: 12px;">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1 class="ion-text-center color-violeta texto-grande">
+    Aun no tienes curso
+  </h1>
+
+  <ion-list>
+    <ion-item routerLink="/showcurse">
+      
+      <img alt="Silhouette of mountains" src="../../assets/images/school-2761394_640.jpg" />
+      
+      <ion-label>
+        <h1 class="texto-mediano">Nombre del Curso</h1>
+        <p class="texto-pequeño">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eius.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
